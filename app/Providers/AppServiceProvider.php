@@ -17,6 +17,10 @@ class AppServiceProvider extends ServiceProvider
        //      return base_path('/../public_html/diser/');
        //      });
          date_default_timezone_set('America/Bogota');
+
+        if ($this->app->environment('production')) {
+            URL::forceScheme('https');
+        }
     }
 
     /**
