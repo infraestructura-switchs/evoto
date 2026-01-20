@@ -108,8 +108,10 @@
 
         <div class="col-12 "> 
 
-          <img src="{{asset('storage/background/'.$imagenbackground->imagen)}}" class="img-border box-shadow-4" width="100%" height="100%"
-          alt="Card image"> 
+          <div class="text-center">
+            <img src="{{asset('storage/background/'.$imagenbackground->imagen)}}" class="img-border box-shadow-4" width="70%" height="auto"
+            alt="Card image"> 
+          </div> 
         </div>
         @endif
 
